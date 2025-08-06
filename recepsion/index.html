@@ -1,0 +1,83 @@
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Hotel</title>
+</head>
+<body>
+
+	<h1>Cabañas</h1>
+	<h3>pedidos</h3>
+	<div class="tabla">
+		<div class="nombreyApellido superior">Nombre y Apellido</div>
+		<div class="email superior">Email</div>
+		<div class="telefono superior">Telefono</div>
+		<div class="fechaIngreso superior">Fecha de ingreso</div>
+		<div class="fechaSalida superior">Fecha de salida</div>
+		<div class="consulta superior">Consulta</div>
+		<div class="superior">eliminar</div>
+
+		<div class="nombreyApellido inferior" id="nombre"></div>
+		<div class="email inferior" id="email"></div>
+		<div class="telefono inferior" id="tel"></div>
+		<div class="fechaIngreso inferior" id="fechaIngreso"></div>
+		<div class="fechaSalida inferior" id="fechaSalida"></div>
+		<div class="consulta inferior" id="consulta"></div>
+		<!-- Agrega un formulario con un botón para eliminar -->
+    <div>
+      <input type="hidden" name="id" value="NAME">
+      <input class="boton inferior" type="submit" onclick="eleminar()" value="Eliminar">
+    </div>
+  </div>
+
+<script>
+	let nombre = document.getElementById("nombre");
+  let email = document.getElementById("email");
+  let tel = document.getElementById("tel");
+  let fechaIngreso = document.getElementById("fechaIngreso");
+  let fechaSalida = document.getElementById("fechaSalida");
+  let consulta = document.getElementById("consulta");
+  // recepcion.js
+
+// Obtener la cadena JSON del localStorage
+const datosGuardados = localStorage.getItem('datosUsuario');
+
+if (datosGuardados) {
+  // Convertir la cadena JSON a un objeto JavaScript
+  const datosUsuario = JSON.parse(datosGuardados);
+
+  // ¡Ahora puedes usar los datos!
+  console.log("Datos recibidos:");
+  console.log(`Primer dia: ${datosUsuario.primerDia}`);
+  console.log(`Ultimo Dia: ${datosUsuario.ultimoDia}`);
+  console.log(`Nombre: ${datosUsuario.nombre}`);
+  console.log(`Email: ${datosUsuario.email}`);
+  console.log(`Telefono: ${datosUsuario.telefono}`);
+  console.log(`Consulta: ${datosUsuario.consulta}`);
+  
+  // Ejemplo de cómo mostrar los datos en tu HTML
+  nombre.textContent = datosUsuario.nombre;
+  email.textContent = datosUsuario.email;
+  tel.textContent = datosUsuario.telefono;
+  fechaIngreso.textContent = datosUsuario.primerDia;
+  fechaSalida.textContent = datosUsuario.ultimoDia;
+  consulta.textContent = datosUsuario.consulta;
+
+} else {
+  console.log("No se encontraron datos en el almacenamiento local.");
+}
+function eleminar() {
+  localStorage.clear();
+  console.log("Todos los datos de la memoria local han sido eliminados.");
+  window.location.href = "../index.html"
+}
+
+// Para usar la función, simplemente llámala:
+// eleminar();
+</script>
+
+</body>
+</html>
