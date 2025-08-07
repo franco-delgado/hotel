@@ -45,7 +45,7 @@ h1{
     background-color: rgba(11, 127, 156, 0.479);
     padding: auto;
     display: none;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
     position: absolute;
     z-index: 6;
 }

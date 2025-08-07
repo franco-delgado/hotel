@@ -1,60 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, .user-scalable=no,.initial-scale=1.0,.minimum-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script-->
-    <link rel="stylesheet" type="text/css" href="estilo.css?101123">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="icon" href="icon.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <title>DELGADOWEBS</title>
+  <meta name="viewport" content="width=device-width, .user-scalable=no,.initial-scale=1.0,.minimum-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script-->
+  <link rel="stylesheet" type="text/css" href="estilo.css?101123">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="icon" href="icon.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <title>DELGADOWEBS</title>
 </head>
 <body>
-
-    <div class="contenedor-h1-menu">
-		<h1>EL HOTEL</h1>
-		<div class="menu" onclick="clickmenu()"></div>
+  <div class="contenedor-h1-menu">
+	<h1>EL HOTEL</h1>
+  	<div class="menu" onclick="clickmenu()"></div>
 	</div>
     <div class="calendario">
-        <h4>Calendario</h4>
-        <div class="calendarInfo">
-            <div class="calendarPrev" id="prevMonth">&#9664;</div>
-            <div class="calendarMonth" id="month"></div>
-            <div class="calendarYear" id="year"></div>
-            <div class="calendarNext" id="nextMonth">&#9654;</div>
-        </div>
+      <h4>Calendario</h4>
+      <div class="calendarInfo">
+        <div class="calendarPrev" id="prevMonth">&#9664;</div>
+        <div class="calendarMonth" id="month"></div>
+        <div class="calendarYear" id="year"></div>
+        <div class="calendarNext" id="nextMonth">&#9654;</div>
+      </div>
 
-        <div class="calendarWeek">
-            <div class="calendarDay calendarItem">L</div>
-            <div class="calendarDay calendarItem">M</div>
-            <div class="calendarDay calendarItem">Mi</div>
-            <div class="calendarDay calendarItem">J</div>
-            <div class="calendarDay calendarItem">V</div>
-            <div class="calendarDay calendarItem">S</div>
-            <div class="calendarDay calendarItem">D</div>
-        </div>
-        <div class="calendarDates" id="dates"></div>
-    </div>
-    
-    <!--div class="contenSumail">
-        <input id="sumail" type="email" placeholder="coloque aquí el e-mail donde desea recibir el mensaje">
-    </div-->
+      <div class="calendarWeek">
+        <div class="calendarDay calendarItem">L</div>
+        <div class="calendarDay calendarItem">M</div>
+        <div class="calendarDay calendarItem">Mi</div>
+        <div class="calendarDay calendarItem">J</div>
+        <div class="calendarDay calendarItem">V</div>
+        <div class="calendarDay calendarItem">S</div>
+        <div class="calendarDay calendarItem">D</div>
+      </div>
+    <div class="calendarDates" id="dates"></div>
+  </div>  
 
-    <div class="formul">
-        <h2>¡DEJANOS TU MENSAJE!</h2>
-        <input id="nombre" type="text" placeholder="Nombre completo">
-        <input id="email" type="email" placeholder="Email">
-        <input id="tel" type="tel" placeholder="N° tel:">
-        <textarea id="consulta" placeholder="dejenos su mensaje"></textarea>
-        <input id="enviarForm" onclick="enviar()" type="submit">
-    </div>
-
-
-
+  <div class="formul">
+    <h2>¡DEJANOS TU MENSAJE!</h2>
+    <input id="nombre" type="text" placeholder="Nombre completo">
+    <input id="email" type="email" placeholder="Email">
+    <input id="tel" type="tel" placeholder="N° tel:">
+    <textarea id="consulta" placeholder="dejenos su mensaje"></textarea>
+    <input id="enviarForm" onclick="enviar()" type="submit">
+  </div>
 </body>
 <script src="codigo.js?101123"></script>
 </html>
